@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI bibl</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#44aabb">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- dropdownmenu -->
+    <script src="https://cdn.jsdelivr.net/npm/easy-toggler@2.2.7"></script>
+
+    <!-- iconify -->
+    <script src="https://code.iconify.design/3/3.0.1/iconify.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div>
+            <nav class="navbar">
+            <a href="#buttom" class="navbar__link navbar__link--active">1. Кнопки</a>
+            <a href="#hint" class="navbar__link">2. Подсказки</a>
+            <a href="#dropdownmenu" class="navbar__link">3. Выпадающее меню</a>
+            <a href="#checkbox" class="navbar__link">4. Checkbox, switch</a>
+            <a href="#inputfield" class="navbar__link">5. Поля ввода</a>
+            <a href="#mainmenu" class="navbar__link">6. Меню сайта</a>
+            <a href="#model" class="navbar__link">7. Модальное окно</a>
+            <a href="#card" class="navbar__link">8. Карточка</a>
+        </nav>
+        </div>
+       
+        <main class="main">
+
+        <section id="buttom" class="section">
+            <h2 class="title">1. Кнопки</h2>
+            
+            <button class="btn">Кнопка</button>
+            <button class="btn btn--rounded">Кнопка</button>
+        </section>
+
+        <section id="hint" class="section">
+            <h2 class="title">2. Подсказки</h2>
+            <span class="link" data-tooltip="Текст какой-либо подсказки">Какая-то подсказка</span>
+        </section>
+
+        <section id="dropdownmenu" class="section">
+            <h2 class="title">3. Выпадающее меню</h2>
+
+            <div class="dropdown">
+                <a href="#"
+                    easy-toggle="#drop_1" 
+                    class="link" 
+                    easy-class="dropdown__drop--active"
+                    easy-rcoe
+                    >Выпадающее меню</a>
+
+                <div id="drop_1" class="dropdown__drop">
+                    <a href="#" class="dropdown__drop-item">Элемент меню</a>
+                    <a href="#" class="dropdown__drop-item">Второй элемент меню</a>
+                    <a href="#" class="dropdown__drop-item">Третий элемент меню</a>
+                    <a href="#" class="dropdown__drop-item">Четвёртый элемент меню</a>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="checkbox" class="section">
+            <h2 class="title">4. Checkbox, switch</h2>
+            <div>
+                <div class="switch">
+                <input type="checkbox" name="switch1" id="switch1">
+                <label for="switch1" class="switch__label">Текст для свитча </label>
+            </div>
+            </div>
+
+            <div>
+                <div class="switch">
+                <input type="checkbox" name="switch2" id="switch2" checked disabled>
+                <label for="switch2" class="switch__label">Это заблокированный свитч. Вам в доступе отказано </label>
+            </div>
+            </div>
+            
+            <div>
+                <div class="checkbox">
+                <input type="checkbox" name="chek1" id="chek1">
+                <label for="chek1" class="checkbox__label">Текст для чекбокса </label>
+            </div>
+            </div>
+            
+
+            
+        </section>
+
+        <section id="inputfield" class="section">
+            <h2 class="title">5. Поля ввода</h2>
+            <div style="width: 440px">
+
+                <div class="field">
+                    <input type="text" class="field__control" placeholder="Введите ваше имя">
+                </div>
+
+                <div class="field">
+                    <span class="iconify field__icon" data-icon="material-symbols:search"></span>
+                    <input type="text" class="field__control" placeholder="Search...">
+                </div>
+                
+            </div>
+
+        </section>
+
+        <section id="mainmenu" class="section">
+            <h2 class="title">6. Меню сайта</h2>
+
+            <nav class="menubar menubar">
+                <a href="#" class="menubar__brand">Logo</a>
+
+                <ul class="menubar__nav">
+                    <li><a href="#" class="menubar__nav-link">About us</a></li>
+                    <li><a href="#" class="menubar__nav-link">Deals</a></li>
+                    <li><a href="#" class="menubar__nav-link">How to find</a></li>
+                    <li><a href="#" class="menubar__nav-link">Rewiews</a></li>
+                    <li><a href="#" class="menubar__nav-link">Contscts</a></li>
+                </ul>
+            </nav>
+
+        </section>
+
+        <section id="model" class="section">
+            <h2 class="title">7. Модальное окно</h2>
+              <button class="btn" easy-toggle="#modelwin" easy-class="model--active">Модальное окно</button>
+        </section>
+
+        <section id="card" class="section">
+            <h2 class="title">8. Карточка</h2>
+            
+            <a href="#">
+                <article class="card">
+                <img src="img/cat_1.jpg" alt="" class="card__image">
+                <div class="card__body">
+                    <h3 class="card__title">Заголовокок Карточки</h3>
+                    <ul class="card__param">
+                        <li>
+                            <span class="iconify" data-icon="ic:outline-remove-red-eye"></span>
+                             3,4k</li>
+                        <li>
+                            <span class="iconify" data-icon="mdi:comments-outline"></span>
+                             153</li>
+                        <li>
+                            <span class="iconify" data-icon="uiw:date"> </span> 
+                             <time> 28 april 2022, 15:43</time></li>
+                    </ul>
+                    <p class="card__text">Обломовщина, по имени героя романа Ивана Гончарова «Обломов» — нарицательное слово для обозначения личностного застоя, рутины, апатии, и, в частности, лени. Тем не менее, нельзя назвать это понятие лишь ленью. Обломовщина также включает в себя склонность.</p>
+                    <span class="btn">Читать</span>
+                </div>
+                </article>
+            </a>
+            
+        </section>
+
+        </main>
+    </div>
+
+    <div id="modelwin" class="model">
+        <div class="model__window">
+            <h2 class="model__window-title">Заголовокок окна</h2>
+            <button class="model__window-close" easy-remove="#modelwin" easy-class="model--active">
+                <span class="iconify" data-icon="ic:outline-close"></span>
+            </button>
+            <div class="model__body">
+                <span clss="model__body-label">Любой контент</span>
+            </div>
+        </div>
+
+        <div class="model__overlay" easy-remove="#modelwin" easy-class="model--active"></div>
+    </div>
+
+</body>
+</html>
+
