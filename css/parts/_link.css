@@ -1,0 +1,13 @@
+.link{
+    line-height: 27px;
+    font-weight: 700;
+    color: azure;
+    text-decoration: underline;
+    transition: color 150ms ease-in-out;
+    cursor: default;
+}
+
+.link:hover{
+    color: cyan;
+    text-decoration: none;
+}

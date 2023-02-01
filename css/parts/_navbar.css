@@ -1,0 +1,32 @@
+:root {
+    --backG-color: #1F2833;
+    --ordinary-text: #C5C6C7;
+    --bgight-text: #66FCF1;
+    --additiondl:#45A29E;
+  }
+.navbar{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 30px;
+    border-radius: 20px;
+    background-color:var(--backG-color);
+    border: 1px solid var(--additiondl);
+    position: sticky;
+    top: 30px;
+}
+
+.navbar__link{
+    color:var(--ordinary-text);
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: color 200ms ease-in-out;
+    line-height: 27px;
+}
+
+.navbar__link:last-child{
+    margin-bottom: 0;
+}
+
+.navbar__link:hover{
+    color: var(--bgight-text);
+}

@@ -1,0 +1,58 @@
+:root {
+    --backG-color: #1F2833;
+    --ordinary-text: #C5C6C7;
+    --bgight-text: #66FCF1;
+    --additiondl:#45A29E;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:before {
+    box-sizing: border-box;
+}
+
+*:after{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+    font-family: 'Cartograph CF', sans-serif ;
+    min-width: 1100px;
+    height: auto;
+    background-color: var(--backG-color);
+    color:var(--ordinary-text);
+}
+
+ul{
+    list-style-type: none;
+}
+
+img{
+    width: 100%;
+}
+
+button{
+    outline: none !important;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+input{
+    font-size: inherit;
+    font-family: inherit;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a, a:hover{
+    color: #ffff;
+    text-decoration: none;
+}
